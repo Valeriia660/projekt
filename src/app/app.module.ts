@@ -14,6 +14,7 @@ import { DocComponent } from './doc/doc.component';
 import { ModelsComponent } from './models/models.component';
 import { ShowComponent } from './show/show.component';
 import { FormsModule } from '@angular/forms';
+import { CatalogComponent } from './catalog/catalog.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     NotFoundComponent,
     DocComponent,
     ModelsComponent,
-    ShowComponent
+    ShowComponent,
+    CatalogComponent
   ],
   imports: [
     BrowserModule,
