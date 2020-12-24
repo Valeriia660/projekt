@@ -1,0 +1,14 @@
+.bg {
+    height: 50vh;
+    width: 60vw;
+    background-color: rgb(240, 226, 255);
+    position: fixed;
+    left: 20vw;
+    top: 16vh;
+}
+
+.model {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+}

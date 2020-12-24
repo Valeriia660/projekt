@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'doc', component: DocComponent},
   { path: 'star', component: PayComponent},
   { path: 'models', component: ModelsComponent},
-  { path: 'show', component: ShowComponent},
+  { path: 'show/:model_id', component: ShowComponent},
   { path: '**', component: NotFoundComponent },
 ];
 
