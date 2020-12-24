@@ -1,0 +1,16 @@
+#bg {
+    height: 50vh;
+    width: 60vw;
+    background-color: rgb(240, 226, 255);
+    position: fixed;
+    left: 20vw;
+    top: 16vh;
+}
+
+.hp {
+    font-size: 19px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    left: 44vw;
+    top: 18vh;
+}

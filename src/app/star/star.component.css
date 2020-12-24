@@ -1,0 +1,66 @@
+.tol {
+    top: 97px;
+    left: 30px;
+    position: fixed;
+    display: inline-block;
+}
+
+.a {
+    background-color: rgb(172, 131, 247);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.mydropdown {
+    display: none;
+    position: absolute;
+    font-size: 18px;
+    background-color: rgb(232, 218, 255);
+    padding: 20px;
+    width: 13vw;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.mydropdown a {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.tol:hover .mydropdown {
+    display: block;
+    padding: 0px;
+}
+
+.shadow {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.shadow:hover  {
+    background-color: rgb(208, 191, 235);
+    color: rgb(29, 10, 63);
+}
+
+#bg {
+    height: 50vh;
+    width: 60vw;
+    background-color: rgb(240, 226, 255);
+    position: fixed;
+    left: 20vw;
+    top: 16vh;
+}
+
+.hd {
+    font-size: 19px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    left: 42vw;
+    top: 18vh;
+}

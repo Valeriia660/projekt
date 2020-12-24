@@ -1,0 +1,283 @@
+.tol {
+    top: 97px;
+    left: 30px;
+    position: fixed;
+    display: inline-block;
+}
+
+.a {
+    background-color: rgb(172, 131, 247);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.mydropdown {
+    display: none;
+    position: absolute;
+    font-size: 18px;
+    background-color: rgb(232, 218, 255);
+    padding: 20px;
+    width: 13vw;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.mydropdown a {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.tol:hover .mydropdown {
+    display: block;
+    padding: 0px;
+}
+
+.shadow {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.shadow:hover  {
+    background-color: rgb(208, 191, 235);
+    color: rgb(29, 10, 63);
+}
+
+#bg1 {
+    display: grid;
+    grid-template-rows: repeat(6, 230px);
+    grid-template-columns: auto;
+    height: 100vh;
+    width: 60vw;
+    background-color: rgb(240, 226, 255);
+    position: fixed;
+    left: 20vw;
+    top: 16vh;
+    padding: 10px;
+}
+
+.number1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.number2 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.number3 {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.number4 {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.photo {
+    position: fixed;
+    left: 21vw;
+    top: 20vh;
+}
+
+.photo1 {
+    position: fixed;
+    left: 21vw;
+    top: 45vh;
+}
+
+.photo2 {
+    position: fixed;
+    left: 21vw;
+    top: 70vh;
+}
+
+.photo3 {
+    position: fixed;
+    left: 21vw;
+    top: 95vh;
+}
+
+.nm {
+    font-size: 27px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    font-weight: bold;
+    left: 34vw;
+    top: 21vh;
+    text-decoration: none;
+}
+
+.nm:hover {
+    font-size: 29px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    font-weight: bold;
+    left: 34vw;
+    top: 21vh;
+    text-decoration: underline;
+}
+
+.nm1 {
+    font-size: 27px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    font-weight: bold;
+    left: 34vw;
+    top: 46vh;
+    text-decoration: none;
+}
+
+.nm1:hover {
+    font-size: 29px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    left: 34vw;
+    top: 46vh;
+    text-decoration: underline;
+}
+
+.nm2 {
+    font-size: 27px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    font-weight: bold;
+    left: 34vw;
+    top: 71vh;
+    text-decoration: none;
+}
+
+.nm2:hover {
+    font-size: 29px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    left: 34vw;
+    top: 71vh;
+    text-decoration: underline;
+}
+
+.nm3 {
+    font-size: 27px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    font-weight: bold;
+    left: 34vw;
+    top: 96vh;
+    text-decoration: none;
+}
+
+.nm3:hover {
+    font-size: 29px;
+    color: rgb(65, 40, 134);
+    position: fixed;
+    left: 34vw;
+    top: 96vh;
+    text-decoration: underline;
+}
+
+.nm21 {
+    font-size: 20px;
+    color: rgb(81, 63, 129);
+    position: fixed;
+    left: 34vw;
+    top: 25vh;
+    text-decoration: none;
+}
+
+.nm22 {
+    font-size: 20px;
+    color: rgb(81, 63, 129);
+    position: fixed;
+    left: 34vw;
+    top: 50vh;
+    text-decoration: none;
+}
+
+.nm23 {
+    font-size: 20px;
+    color: rgb(81, 63, 129);
+    position: fixed;
+    left: 34vw;
+    top: 75vh;
+    text-decoration: none;
+}
+
+.nm24 {
+    font-size: 20px;
+    color: rgb(81, 63, 129);
+    position: fixed;
+    left: 34vw;
+    top: 100vh;
+    text-decoration: none;
+}
+
+.py11 {
+    font-size: 28px;
+    color: rgb(81, 63, 129);
+    position: fixed;
+    left: 34vw;
+    top: 36vh;
+    text-decoration: none;
+}
+
+.py12 {
+    font-size: 28px;
+    color: rgb(81, 63, 129);
+    position: fixed;
+    left: 34vw;
+    top: 61vh;
+    text-decoration: none;
+}
+
+.py13 {
+    font-size: 28px;
+    color: rgb(81, 63, 129);
+    position: fixed;
+    left: 34vw;
+    top: 86vh;
+    text-decoration: none;
+}
+
+.py14 {
+    font-size: 28px;
+    color: rgb(81, 63, 129);
+    position: fixed;
+    left: 34vw;
+    top: 111vh;
+    text-decoration: none;
+}
+
+.py {
+    position: fixed;
+    height: 40px;
+    left: 43vw;
+    top: 35vh;
+}
+
+.py1 {
+    position: fixed;
+    height: 40px;
+    left: 43vw;
+    top: 60vh;
+}
+
+.py2 {
+    position: fixed;
+    height: 40px;
+    left: 43vw;
+    top: 85vh;
+}
+
+.py3 {
+    position: fixed;
+    height: 40px;
+    left: 43vw;
+    top: 110vh;
+}

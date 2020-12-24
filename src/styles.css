@@ -1,1 +1,178 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background: url(https://images.wallpaperscraft.ru/image/zvezdnoe_nebo_galaktika_vselennaia_126503_1920x1080.jpg);
+}
+
+#menu {
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(65, 40, 134);
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+}
+
+.c0 {
+    padding: 10px;
+    height: 57px;
+    top: 10px;
+}
+
+.c1 {
+    font-size: 20px;
+    color: rgb(216, 209, 255);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.c2 {
+    font-size: 20px;
+    color: rgb(216, 209, 255);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.c3 {
+    font-size: 20px;
+    color: rgb(216, 209, 255);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.c5 {
+    font-size: 20px;
+    color: rgb(216, 209, 255);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.c0:hover {
+    height: 57px;
+    top: 10px;
+    padding: 10px;
+}
+
+.c1:hover {
+    font-size: 20px;
+    color: rgb(240, 238, 255);
+    text-decoration: underline;
+}
+
+.c2:hover {
+    font-size: 20px;
+    color: rgb(240, 238, 255);
+    text-decoration: underline;
+}
+
+.c3:hover {
+    font-size: 20px;
+    color: rgb(240, 238, 255);
+    text-decoration: underline;
+}
+
+.c4:hover {
+    font-size: 20px;
+    color: rgb(240, 238, 255);
+    text-decoration: underline;
+}
+
+.c5:hover {
+    font-size: 20px;
+    color: rgb(240, 238, 255);
+    text-decoration: underline;
+}
+
+#tl {
+    position: fixed;
+    right: 2vw;
+    top: 2vh;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#tl1 {
+    position: fixed;
+    right: 2vw;
+    top: 7vh;
+    font-size: 16px;
+    color: rgb(205, 193, 226);
+    text-decoration: none;
+}
+
+#tb {
+    height: 6vh;
+    width: 100vw;
+    background-color: rgb(130, 71, 199);
+    position: absolute;
+    left: 0vw;
+    top: 10vh;
+}
+
+.case {
+    position: fixed;
+    right: 15vw;
+    top: 3vh;
+    height: 50px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.f1 {
+    position: fixed;
+    height: 30px;
+    right: 17vw;
+    top: 11.5vh;
+}
+
+.f2 {
+    position: fixed;
+    height: 30px;
+    right: 7vw;
+    top: 11.5vh;
+}
+
+.funk {
+    position: fixed;
+    right: 12vw;
+    top: 12vh;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.funk1 {
+    position: fixed;
+    right: 2vw;
+    top: 12vh;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.funk:hover {
+    position: fixed;
+    right: 12vw;
+    top: 12vh;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.funk1:hover {
+    position: fixed;
+    right: 2vw;
+    top: 12vh;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.inf {
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(65, 40, 134);
+    position: fixed;
+    left: 0vw;
+    bottom: 0px;
+}
