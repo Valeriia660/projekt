@@ -11,7 +11,6 @@ import { StarComponent } from './star/star.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DocComponent } from './doc/doc.component';
-import { ModelsComponent } from './models/models.component';
 import { ShowComponent } from './show/show.component';
 import { FormsModule } from '@angular/forms';
 import { CatalogComponent } from './catalog/catalog.component';
@@ -27,9 +26,8 @@ import { CatalogComponent } from './catalog/catalog.component';
     HomeComponent,
     NotFoundComponent,
     DocComponent,
-    ModelsComponent,
     ShowComponent,
-    CatalogComponent
+    CatalogComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,10 +2,10 @@
     display: grid;
     grid-template-rows: repeat(6, 230px);
     grid-template-columns: auto;
-    height: 100vh;
+    height: 100%;
     width: 60vw;
     background-color: rgb(240, 226, 255);
-    position: fixed;
+    position: absolute;
     left: 20vw;
     top: 16vh;
     padding: 10px; 
@@ -32,25 +32,25 @@
 }
 
 .photo {
-    position: fixed;
+    position: absolute;
     left: 21vw;
     top: 20vh;
 }
 
 .photo1 {
-    position: fixed;
+    position: absolute;
     left: 21vw;
     top: 45vh;
 }
 
 .photo2 {
-    position: fixed;
+    position: absolute;
     left: 21vw;
     top: 70vh;
 }
 
 .photo3 {
-    position: fixed;
+    position: absolute;
     left: 21vw;
     top: 95vh;
 }
@@ -58,7 +58,7 @@
 .nm {
     font-size: 27px;
     color: rgb(65, 40, 134);
-    position: fixed;
+    position: absolute;
     font-weight: bold;
     left: 34vw;
     top: 21vh;
@@ -68,7 +68,7 @@
 .nm:hover {
     font-size: 29px;
     color: rgb(65, 40, 134);
-    position: fixed;
+    position: absolute;
     font-weight: bold;
     left: 34vw;
     top: 21vh;
@@ -78,7 +78,7 @@
 .nm1 {
     font-size: 27px;
     color: rgb(65, 40, 134);
-    position: fixed;
+    position: absolute;
     font-weight: bold;
     left: 34vw;
     top: 46vh;
@@ -88,7 +88,7 @@
 .nm1:hover {
     font-size: 29px;
     color: rgb(65, 40, 134);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 46vh;
     text-decoration: underline;
@@ -97,7 +97,7 @@
 .nm2 {
     font-size: 27px;
     color: rgb(65, 40, 134);
-    position: fixed;
+    position: absolute;
     font-weight: bold;
     left: 34vw;
     top: 71vh;
@@ -107,7 +107,7 @@
 .nm2:hover {
     font-size: 29px;
     color: rgb(65, 40, 134);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 71vh;
     text-decoration: underline;
@@ -116,7 +116,7 @@
 .nm3 {
     font-size: 27px;
     color: rgb(65, 40, 134);
-    position: fixed;
+    position: absolute;
     font-weight: bold;
     left: 34vw;
     top: 96vh;
@@ -126,7 +126,7 @@
 .nm3:hover {
     font-size: 29px;
     color: rgb(65, 40, 134);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 96vh;
     text-decoration: underline;
@@ -135,7 +135,7 @@
 .nm21 {
     font-size: 20px;
     color: rgb(81, 63, 129);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 25vh;
     text-decoration: none;
@@ -144,7 +144,7 @@
 .nm22 {
     font-size: 20px;
     color: rgb(81, 63, 129);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 50vh;
     text-decoration: none;
@@ -153,7 +153,7 @@
 .nm23 {
     font-size: 20px;
     color: rgb(81, 63, 129);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 75vh;
     text-decoration: none;
@@ -162,7 +162,7 @@
 .nm24 {
     font-size: 20px;
     color: rgb(81, 63, 129);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 100vh;
     text-decoration: none;
@@ -171,7 +171,7 @@
 .py11 {
     font-size: 28px;
     color: rgb(81, 63, 129);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 36vh;
     text-decoration: none;
@@ -180,7 +180,7 @@
 .py12 {
     font-size: 28px;
     color: rgb(81, 63, 129);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 61vh;
     text-decoration: none;
@@ -189,7 +189,7 @@
 .py13 {
     font-size: 28px;
     color: rgb(81, 63, 129);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 86vh;
     text-decoration: none;
@@ -198,36 +198,45 @@
 .py14 {
     font-size: 28px;
     color: rgb(81, 63, 129);
-    position: fixed;
+    position: absolute;
     left: 34vw;
     top: 111vh;
     text-decoration: none;
 }
 
 .py {
-    position: fixed;
+    position: absolute;
     height: 40px;
     left: 43vw;
     top: 35vh;
 }
 
 .py1 {
-    position: fixed;
+    position: absolute;
     height: 40px;
     left: 43vw;
     top: 60vh;
 }
 
 .py2 {
-    position: fixed;
+    position: absolute;
     height: 40px;
     left: 43vw;
     top: 85vh;
 }
 
 .py3 {
-    position: fixed;
+    position: absolute;
     height: 40px;
     left: 43vw;
     top: 110vh;
+}
+
+.inf {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(65, 40, 134);
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

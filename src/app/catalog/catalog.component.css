@@ -1,3 +1,9 @@
+.tol {
+    top: 97px;
+    left: 30px;
+    position: absolute;
+    display: inline-block;
+}
 
 .a {
     background-color: rgb(172, 131, 247);

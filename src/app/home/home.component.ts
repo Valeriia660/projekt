@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+
+  models: any[] = [] 
+  
   constructor(private router: Router) { }
 
   goToBasket() {

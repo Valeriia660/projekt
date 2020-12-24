@@ -82,7 +82,7 @@ body {
 }
 
 #tl {
-    position: fixed;
+    position: absolute;
     right: 2vw;
     top: 2vh;
     font-size: 20px;
@@ -91,9 +91,9 @@ body {
 }
 
 #tl1 {
-    position: fixed;
+    position: absolute;
     right: 2vw;
-    top: 7vh;
+    top: 5vh;
     font-size: 16px;
     color: rgb(205, 193, 226);
     text-decoration: none;
@@ -101,7 +101,7 @@ body {
 
 #tb {
     height: 6vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(130, 71, 199);
     position: absolute;
     left: 0vw;
@@ -109,7 +109,7 @@ body {
 }
 
 .case {
-    position: fixed;
+    position: absolute;
     right: 15vw;
     top: 3vh;
     height: 50px;
@@ -119,21 +119,21 @@ body {
 }
 
 .f1 {
-    position: fixed;
+    position: absolute;
     height: 30px;
     right: 17vw;
     top: 11.5vh;
 }
 
 .f2 {
-    position: fixed;
+    position: absolute;
     height: 30px;
     right: 7vw;
     top: 11.5vh;
 }
 
 .funk {
-    position: fixed;
+    position: absolute;
     right: 12vw;
     top: 12vh;
     font-size: 17px;
@@ -142,7 +142,7 @@ body {
 }
 
 .funk1 {
-    position: fixed;
+    position: absolute;
     right: 2vw;
     top: 12vh;
     font-size: 17px;
@@ -151,7 +151,7 @@ body {
 }
 
 .funk:hover {
-    position: fixed;
+    position: absolute;
     right: 12vw;
     top: 12vh;
     font-size: 17px;
@@ -160,19 +160,10 @@ body {
 }
 
 .funk1:hover {
-    position: fixed;
+    position: absolute;
     right: 2vw;
     top: 12vh;
     font-size: 17px;
     color: rgb(255, 255, 255);
     text-decoration: underline;
-}
-
-.inf {
-    height: 5vh;
-    width: 100vw;
-    background-color: rgb(65, 40, 134);
-    position: fixed;
-    left: 0vw;
-    bottom: 0px;
 }
