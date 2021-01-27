@@ -1,4 +1,4 @@
-#bg {
+.bg {
     height: 50vh;
     width: 60vw;
     background-color: rgb(240, 226, 255);
@@ -7,19 +7,33 @@
     top: 16vh;
 }
 
-.cont {
+.call {
+    left: 10px;
     font-size: 19px;
-    color: rgb(65, 40, 134);
     position: absolute;
-    left: 21vw;
-    top: 18vh;
 }
 
-.inf {
-    height: 40px;
-    width: 100%;
-    background-color: rgb(65, 40, 134);
-    position: fixed;
-    bottom: 0;
-    left: 0;
+.hide {
+    display: none; 
+}
+
+.hide + label ~ div{
+    display: none;
+}
+
+.hide + label {
+    padding: 0;
+    color: rgb(65, 40, 134);
+    display: inline-block; 
+}
+
+.hide:checked + label {
+    color: rgb(126, 104, 189);
+    border-bottom: 0;
+}
+
+.hide:checked + label + div {
+    display: block; 
+    padding: 5px; 
+    color: rgb(65, 40, 134);
 }

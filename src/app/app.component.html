@@ -1,18 +1,20 @@
-<div class="header">
-    <div id=menu cellpadding="10">
+<div>
+    <div class=menu cellpadding="10">
         <nav>
             <img routerLink="" routerLinkActive="active" class="c0"
                 src="https://sun9-17.userapi.com/u3ztSoDHq9rwtW3241bPu8yhETqx5HJgTMwTNQ/wZHHZE2CaVM.jpg"
                 (click)="goToMain()">
             <a routerLink="" routerLinkActive="active" class="c1" routerLink=""
                 [routerLinkActiveOptions]="{exact:true}">Главная</a>
-            <a routerLink="/pay" routerLinkActive="active" class="c2">Доставка и оплата</a>
-            <a routerLink="/about" routerLinkActive="active" class="c3">О cайте</a>
-            <a routerLink="/profile" routerLinkActive="active" class="c5">Профиль</a>
-
+            <a routerLink="/pay" routerLinkActive="active" class="c1">Доставка и оплата</a>
+            <a routerLink="/about" routerLinkActive="active" class="c1">О cайте</a>
         </nav>
     </div>
-    <div id="tl">
+
+    <img routerLink="/basket" routerLinkActive="active" class="case"
+        src="https://sun9-36.userapi.com/JchIazUDweb30woMG_k_zaUTpbvqt-0w3LPSow/bImJGAbswq0.jpg" (click)="goToBasket()">
+
+    <div class="tl">
         <table>
             <tr>
                 8-800-***-**-**
@@ -26,55 +28,18 @@
         </table>
     </div>
 
-    <img routerLink="/basket" routerLinkActive="active" class="case"
-        src="https://sun9-36.userapi.com/JchIazUDweb30woMG_k_zaUTpbvqt-0w3LPSow/bImJGAbswq0.jpg" (click)="goToBasket()">
-
-
-
     <div id="tb"></div>
 
     <div>
-        <table>
-            <tr>
-                <img routerLink="/star" routerLinkActive="active" class="f1"
-                    src="https://sun9-2.userapi.com/_7LISZLPSHCUhub4I3etaJ03DqZZjoxyJTcVWQ/lzbNxFUNME0.jpg"
-                    (click)="goToStar()">
-                <a routerLink="/star" routerLinkActive="active" class="funk">Избранное</a>
-            </tr>
-        </table>
-    </div>
+        <img routerLink="/star" routerLinkActive="active" class="f1"
+            src="https://sun9-2.userapi.com/_7LISZLPSHCUhub4I3etaJ03DqZZjoxyJTcVWQ/lzbNxFUNME0.jpg"
+            (click)="goToStar()">
+        <a routerLink="/star" routerLinkActive="active" class="funk">Избранное</a>
 
-    <div>
-        <table>
-            <tr>
-                <img routerLink="/doc" routerLinkActive="active" class="f2"
-                    src="https://sun9-62.userapi.com/B60azuH6Sy_VVs1jdjnZGlN5FOkilgc7tCtuBw/1BEbv5AebfY.jpg"
-                    (click)="goToDoc()">
-                <a routerLink="/doc" routerLinkActive="active" class="funk1">Сравнение</a>
-            </tr>
-        </table>
+        <img routerLink="/doc" routerLinkActive="active" class="f2"
+            src="https://sun9-62.userapi.com/B60azuH6Sy_VVs1jdjnZGlN5FOkilgc7tCtuBw/1BEbv5AebfY.jpg"
+            (click)="goToDoc()">
+        <a routerLink="/doc" routerLinkActive="active" class="funk1">Сравнение</a>
     </div>
-</div>
-
-<div class="inf">
-    <table>
-        <tr>
-            <td>
-                <a href="https://vk.com/id:1234"><img
-                        src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202054chatlogosocialsocialmediavk-115634_115667.png"
-                        height="35px"></a>
-            </td>
-            <td>
-                <a href="https://www.instagram.com/1234/"><img
-                        src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202090instagramlogosocialsocialmedia-115598_115703.png"
-                        height="35px"></a>
-            </td>
-            <td>
-                <a href="https://www.facebook.com/1234.528319"><img
-                        src="https://sun9-8.userapi.com/FalcGcOYsc8Q-xArL0BboUanzMbH3kfn3v57MA/rjS_1bJNdx0.jpg"
-                        height="35px"></a>
-            </td>
-        </tr>
-    </table>
 </div>
 <router-outlet></router-outlet>
