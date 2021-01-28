@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StarBasketService } from '../star-basket.service';
 
 @Component({
   selector: 'app-star',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StarComponent implements OnInit {
 
-  constructor() { }
+  stars: any[];
+  constructor(private starBasketService: StarBasketService) {
+    this.stars = this.starBasketService.stars;
+  }
 
   ngOnInit(): void {
+  }
+
+  removeFromStars(model: any): void {
+    const index = this.starBasketService.stars.indexOf(model, 0);
+    if (index > -1) {
+      this.starBasketService.stars.splice(index, 1);
+    }
+    this.stars = this.starBasketService.stars;
   }
 
 }

@@ -1,7 +1,33 @@
 <app-catalog class="tol"></app-catalog>
 
-<div id="bg"></div>
+<div id="bg">
+    <div *ngFor="let model of stars">
+        <div class="model">
+            <div class="col1">
+                <div class="photo">
+                    <img [src]="model.link" height="200px"><br>
+                </div>
+            </div>
+            <div class="col2">
+                <a routerLink="/basket" id="name" routerLinkActive="active">{{model.name}}</a>
+                <div id="desc">
+                    {{model.desc}}
+                </div>
+                <br>
+                <div id="price">
+                    <strong>{{model.price}} РУБ</strong>
+                </div>
+                <br>
+                <img routerLink="/basket" routerLinkActive="active"
+                    src="https://sun9-36.userapi.com/JchIazUDweb30woMG_k_zaUTpbvqt-0w3LPSow/bImJGAbswq0.jpg"
+                    height="40px"> <!-- по аналогии -->
+                <img src="https://sun9-36.userapi.com/JchIazUDweb30woMG_k_zaUTpbvqt-0w3LPSow/bImJGAbswq0.jpg" title="удалить из избранных"
+                    height="40px" (click)="removeFromStars(model)">
+            </div>
+        </div>
+    </div>
+</div>
 
-<div class="hd">Ни одного товара не найдено</div>
+<!-- <div class="hd">Ни одного товара не найдено</div> -->
 
 <app-social class="inf"></app-social>
