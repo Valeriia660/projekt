@@ -32,7 +32,6 @@ export class ShowComponent implements OnInit {
   }
 
   addToStars(model: any): void {
-    this.starBasketService.stars.push(model);
-    console.log("added to stars");
+    this.starBasketService.addToStars(model);
   }
 }
