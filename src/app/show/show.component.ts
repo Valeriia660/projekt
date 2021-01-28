@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ModelsService } from '../models.service';
+import { StarBasketService } from '../star-basket.service';
 
 @Component({
   selector: 'app-show',
@@ -12,7 +13,7 @@ export class ShowComponent implements OnInit {
 
   models: any[] = []
   sub: Subscription;
-  constructor(private router: Router, private actRouter: ActivatedRoute, private modelsService: ModelsService) {
+  constructor(private router: Router, private actRouter: ActivatedRoute, private modelsService: ModelsService, private starBasketService: StarBasketService) {
     this.sub = this.actRouter.params.subscribe(p => {
       let number = +p["model_id"];
       if (number === 1) {
@@ -28,5 +29,10 @@ export class ShowComponent implements OnInit {
 
   goToBasket() {
     this.router.navigate(["/basket"]);
+  }
+
+  addToStars(model: any): void {
+    this.starBasketService.stars.push(model);
+    console.log("added to stars");
   }
 }
