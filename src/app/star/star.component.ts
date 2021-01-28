@@ -10,18 +10,17 @@ export class StarComponent implements OnInit {
 
   stars: any[];
   constructor(private starBasketService: StarBasketService) {
-    this.stars = this.starBasketService.stars;
+    this.stars = this.starBasketService.getList(this.starBasketService.keyStars);
+    console.log(this.stars);
+    
   }
 
   ngOnInit(): void {
   }
 
   removeFromStars(model: any): void {
-    const index = this.starBasketService.stars.indexOf(model, 0);
-    if (index > -1) {
-      this.starBasketService.stars.splice(index, 1);
-    }
-    this.stars = this.starBasketService.stars;
+    this.starBasketService.removeFromStars(model);
+    this.stars = this.starBasketService.getList(this.starBasketService.keyStars);
   }
 
 }
