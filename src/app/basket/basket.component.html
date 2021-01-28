@@ -1,7 +1,33 @@
-<app-catalog class="tol"></app-catalog>
 
-<div id="bg"></div>
 
-<div class="hp">Товары не найдены</div>
+<div id="bg">
+    <div *ngFor="let model of baskets">
+        <div class="model">
+            <div class="col1">
+                <div class="photo">
+                    <img [src]="model.link" height="200px"><br>
+                </div>
+            </div>
+            <div class="col2">
+                <a routerLink="/basket" id="name" routerLinkActive="active">{{model.name}}</a>
+                <div id="desc">
+                    {{model.desc}}
+                </div>
+                <br>
+                <div id="price">
+                    <strong>{{model.price}} РУБ</strong>
+                </div>
+                <br>
+                <img routerLink="/basket" routerLinkActive="active"
+                    src="../assets/img/basket.jpg" title="удалить из корины"
+                    height="40px" (click)="removeFromBaskets(model)">
+                <img src="../assets/img/starr.jpg" title="добавить в избранные"
+                    height="40px" (click)="addToStars(model)">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--div class="hp">Товары не найдены</div-->
 
 <app-social class="inf"></app-social>

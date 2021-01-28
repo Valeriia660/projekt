@@ -12,6 +12,7 @@ export class StarComponent implements OnInit {
   constructor(private starBasketService: StarBasketService) {
     this.stars = this.starBasketService.stars;
   }
+  
 
   ngOnInit(): void {
   }
@@ -24,4 +25,8 @@ export class StarComponent implements OnInit {
     this.stars = this.starBasketService.stars;
   }
 
+  addToBaskets(model: any): void {
+    this.starBasketService.baskets.push(model);
+    console.log("added to baskets");
+  }
 }

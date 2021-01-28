@@ -23,7 +23,4 @@ export class AppComponent {
     this.router.navigate(["/star"]);
   }
 
-  goToDoc() {
-    this.router.navigate(["/doc"]);
-  }
 }

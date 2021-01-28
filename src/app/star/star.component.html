@@ -1,4 +1,4 @@
-<app-catalog class="tol"></app-catalog>
+
 
 <div id="bg">
     <div *ngFor="let model of stars">
@@ -19,9 +19,9 @@
                 </div>
                 <br>
                 <img routerLink="/basket" routerLinkActive="active"
-                    src="https://sun9-36.userapi.com/JchIazUDweb30woMG_k_zaUTpbvqt-0w3LPSow/bImJGAbswq0.jpg"
-                    height="40px"> <!-- по аналогии -->
-                <img src="https://sun9-36.userapi.com/JchIazUDweb30woMG_k_zaUTpbvqt-0w3LPSow/bImJGAbswq0.jpg" title="удалить из избранных"
+                    src="../assets/img/basket.jpg" title="добавить в корзину"
+                    height="40px" (click)="addToBaskets()">
+                <img src="../assets/img/starr.jpg" title="удалить из избранных"
                     height="40px" (click)="removeFromStars(model)">
             </div>
         </div>

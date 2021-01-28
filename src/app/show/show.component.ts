@@ -27,8 +27,13 @@ export class ShowComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  goToBasket() {
-    this.router.navigate(["/basket"]);
+  //goToBasket() {
+    //this.router.navigate(["/basket"]);
+  //}
+
+  addToBaskets(model: any): void {
+    this.starBasketService.baskets.push(model);
+    console.log("added to baskets");
   }
 
   addToStars(model: any): void {

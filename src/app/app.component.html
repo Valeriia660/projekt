@@ -1,19 +1,16 @@
 <div>
     <div class=menu cellpadding="10">
         <nav>
-            <img routerLink="" routerLinkActive="active" class="c0"
-                src="https://sun9-17.userapi.com/u3ztSoDHq9rwtW3241bPu8yhETqx5HJgTMwTNQ/wZHHZE2CaVM.jpg"
-                (click)="goToMain()">
+            <img routerLink="" routerLinkActive="active" class="c0" src="../assets/img/logo.jpg" (click)="goToMain()">
+            
             <a routerLink="" routerLinkActive="active" class="c1" routerLink=""
                 [routerLinkActiveOptions]="{exact:true}">Главная</a>
             <a routerLink="/pay" routerLinkActive="active" class="c1">Доставка и оплата</a>
             <a routerLink="/about" routerLinkActive="active" class="c1">О cайте</a>
+            <a routerLink="/ent" routerLinkActive="active" class="c1">Вход</a>
         </nav>
     </div>
-
-    <img routerLink="/basket" routerLinkActive="active" class="case"
-        src="https://sun9-36.userapi.com/JchIazUDweb30woMG_k_zaUTpbvqt-0w3LPSow/bImJGAbswq0.jpg" (click)="goToBasket()">
-
+    `
     <div class="tl">
         <table>
             <tr>
@@ -28,18 +25,18 @@
         </table>
     </div>
 
-    <div id="tb"></div>
+    <div ></div>
 
-    <div>
-        <img routerLink="/star" routerLinkActive="active" class="f1"
-            src="https://sun9-2.userapi.com/_7LISZLPSHCUhub4I3etaJ03DqZZjoxyJTcVWQ/lzbNxFUNME0.jpg"
-            (click)="goToStar()">
-        <a routerLink="/star" routerLinkActive="active" class="funk">Избранное</a>
+    <div class="case" id="tb">
+        <nav>
+            <app-catalog class="tol"></app-catalog>
 
-        <img routerLink="/doc" routerLinkActive="active" class="f2"
-            src="https://sun9-62.userapi.com/B60azuH6Sy_VVs1jdjnZGlN5FOkilgc7tCtuBw/1BEbv5AebfY.jpg"
-            (click)="goToDoc()">
-        <a routerLink="/doc" routerLinkActive="active" class="funk1">Сравнение</a>
+            <img routerLink="/basket" routerLinkActive="active" class="f1"  src="../assets/img/basket.jpg" title="корзина"
+                (click)="goToBasket()">
+
+            <img routerLink="/star" routerLinkActive="active" class="f1" src="../assets/img/starr.jpg" title="избранное"
+                (click)="goToStar()">
+        </nav>
     </div>
 </div>
 <router-outlet></router-outlet>

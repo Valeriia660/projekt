@@ -1,5 +1,7 @@
 body {
-    background: url(https://images.wallpaperscraft.ru/image/zvezdnoe_nebo_galaktika_vselennaia_126503_1920x1080.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .menu {
@@ -14,13 +16,16 @@ body {
 .c0 {
     height: 65px;
     padding-top: 10px;
+    padding-right: 277px;
+    padding-left: 13px;
+    outline: none;
 }
 
 .c1 {
-    font-size: 20px;
+    font-size: 26px;
     color: rgb(216, 209, 255);
     text-decoration: none;
-    padding: 15px;
+    padding-left: 100px;
 }
 
 .c1:hover {
@@ -54,27 +59,17 @@ body {
 
 .case {
     position: absolute;
-    right: 15vw;
-    top: 3vh;
-    height: 50px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+    top: 0px;
+    right: 4.2vw;
+
 }
 
 .f1 {
-    position: absolute;
-    height: 30px;
-    right: 17vw;
-    top: 11.5vh;
+    height: 57px;
+    outline: none;
+    padding: 33px;
 }
 
-.f2 {
-    position: absolute;
-    height: 30px;
-    right: 7vw;
-    top: 11.5vh;
-}
 
 .funk {
     position: absolute;
