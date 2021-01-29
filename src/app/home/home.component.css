@@ -1,233 +1,65 @@
-#bg1 {
-    display: grid;
-    grid-template-rows: repeat(6, 230px);
-    grid-template-columns: auto;
+#bg {
+    max-height: 10000%;
+    width: 60vw;
+    background-color: rgb(240, 226, 255);
+    position: absolute;
+    left: 20vw;
+    top: 16vh;
+}
+
+.hd {
+    font-size: 19px;
+    color: rgb(65, 40, 134);
+    position: absolute;
+    left: 44vw;
+    top: 18vh;
+}
+
+.bg {
     height: 100%;
     width: 60vw;
     background-color: rgb(240, 226, 255);
     position: absolute;
     left: 20vw;
     top: 16vh;
-    padding: 10px; 
 }
 
-.number1 {
-    grid-row: 1;
-    grid-column: 1;
+.model {
+    display: grid;
+    padding: 10px;
+    margin-left: 10px;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
 }
 
-.number2 {
-    grid-row: 2;
-    grid-column: 1;
-}
-
-.number3 {
-    grid-row: 3;
-    grid-column: 1;
-}
-
-.number4 {
-    grid-row: 4;
-    grid-column: 1;
-}
-
-.photo {
-    position: absolute;
-    left: 21vw;
-    top: 20vh;
-}
-
-.photo1 {
-    position: absolute;
-    left: 21vw;
-    top: 45vh;
-}
-
-.photo2 {
-    position: absolute;
-    left: 21vw;
-    top: 70vh;
-}
-
-.photo3 {
-    position: absolute;
-    left: 21vw;
-    top: 95vh;
-}
-
-.nm {
+#name {
     font-size: 27px;
     color: rgb(65, 40, 134);
-    position: absolute;
     font-weight: bold;
-    left: 34vw;
-    top: 21vh;
     text-decoration: none;
 }
 
-.nm:hover {
+#name:hover {
     font-size: 29px;
     color: rgb(65, 40, 134);
-    position: absolute;
-    font-weight: bold;
-    left: 34vw;
-    top: 21vh;
     text-decoration: underline;
 }
 
-.nm1 {
-    font-size: 27px;
-    color: rgb(65, 40, 134);
-    position: absolute;
-    font-weight: bold;
-    left: 34vw;
-    top: 46vh;
-    text-decoration: none;
-}
-
-.nm1:hover {
-    font-size: 29px;
-    color: rgb(65, 40, 134);
-    position: absolute;
-    left: 34vw;
-    top: 46vh;
-    text-decoration: underline;
-}
-
-.nm2 {
-    font-size: 27px;
-    color: rgb(65, 40, 134);
-    position: absolute;
-    font-weight: bold;
-    left: 34vw;
-    top: 71vh;
-    text-decoration: none;
-}
-
-.nm2:hover {
-    font-size: 29px;
-    color: rgb(65, 40, 134);
-    position: absolute;
-    left: 34vw;
-    top: 71vh;
-    text-decoration: underline;
-}
-
-.nm3 {
-    font-size: 27px;
-    color: rgb(65, 40, 134);
-    position: absolute;
-    font-weight: bold;
-    left: 34vw;
-    top: 96vh;
-    text-decoration: none;
-}
-
-.nm3:hover {
-    font-size: 29px;
-    color: rgb(65, 40, 134);
-    position: absolute;
-    left: 34vw;
-    top: 96vh;
-    text-decoration: underline;
-}
-
-.nm21 {
+#desc {
     font-size: 20px;
     color: rgb(81, 63, 129);
-    position: absolute;
-    left: 34vw;
-    top: 25vh;
-    text-decoration: none;
 }
 
-.nm22 {
-    font-size: 20px;
-    color: rgb(81, 63, 129);
-    position: absolute;
-    left: 34vw;
-    top: 50vh;
-    text-decoration: none;
-}
-
-.nm23 {
-    font-size: 20px;
-    color: rgb(81, 63, 129);
-    position: absolute;
-    left: 34vw;
-    top: 75vh;
-    text-decoration: none;
-}
-
-.nm24 {
-    font-size: 20px;
-    color: rgb(81, 63, 129);
-    position: absolute;
-    left: 34vw;
-    top: 100vh;
-    text-decoration: none;
-}
-
-.py11 {
+#price {
     font-size: 28px;
     color: rgb(81, 63, 129);
-    position: absolute;
-    left: 34vw;
-    top: 36vh;
-    text-decoration: none;
 }
 
-.py12 {
-    font-size: 28px;
-    color: rgb(81, 63, 129);
-    position: absolute;
-    left: 34vw;
-    top: 61vh;
-    text-decoration: none;
-}
-
-.py13 {
-    font-size: 28px;
-    color: rgb(81, 63, 129);
-    position: absolute;
-    left: 34vw;
-    top: 86vh;
-    text-decoration: none;
-}
-
-.py14 {
-    font-size: 28px;
-    color: rgb(81, 63, 129);
-    position: absolute;
-    left: 34vw;
-    top: 111vh;
-    text-decoration: none;
-}
-
-.py {
-    position: absolute;
+.inf {
     height: 40px;
-    left: 43vw;
-    top: 35vh;
-}
-
-.py1 {
-    position: absolute;
-    height: 40px;
-    left: 43vw;
-    top: 60vh;
-}
-
-.py2 {
-    position: absolute;
-    height: 40px;
-    left: 43vw;
-    top: 85vh;
-}
-
-.py3 {
-    position: absolute;
-    height: 40px;
-    left: 43vw;
-    top: 110vh;
+    width: 100%;
+    background-color: rgb(65, 40, 134);
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

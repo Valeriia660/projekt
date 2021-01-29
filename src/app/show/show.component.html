@@ -1,5 +1,3 @@
-
-
 <div class="bg">
     <div *ngFor="let model of models">
         <div class="model">
@@ -18,11 +16,10 @@
                     <strong>{{model.price}} РУБ</strong>
                 </div>
                 <br>
-                <img routerLink="/basket" routerLinkActive="active"
-                    src="../assets/img/basket.jpg" title="добавить в корзину"
-                    height="40px" (click)="addToBaskets()">
-                <img src="../assets/img/starr.jpg" title="добавить в избранные"
-                    height="40px" (click)="addToStars(model)">
+                <img routerLink="/basket" routerLinkActive="active" src="../assets/img/basket.jpg"
+                    title="добавить в корзину" height="40px" (click)="addToBaskets()">
+                <img src="../assets/img/starr.jpg" title="добавить в избранные" height="40px"
+                    (click)="addToStars(model)">
             </div>
         </div>
     </div>

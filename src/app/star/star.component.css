@@ -1,5 +1,5 @@
 #bg {
-    height: 50vh;
+    max-height: 1000%;
     width: 60vw;
     background-color: rgb(240, 226, 255);
     position: absolute;
@@ -13,15 +13,6 @@
     position: absolute;
     left: 44vw;
     top: 18vh;
-}
-
-.bg {
-    height: 100%;
-    width: 60vw;
-    background-color: rgb(240, 226, 255);
-    position: absolute;
-    left: 20vw;
-    top: 16vh;
 }
 
 .model {
