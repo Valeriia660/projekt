@@ -1,6 +1,7 @@
 
 
 <div id="bg">
+    <div class="hd" *ngIf="stars.length == 0">Ни одного товара не найдено</div>
     <div *ngFor="let model of stars">
         <div class="model">
             <div class="col1">
@@ -28,6 +29,5 @@
     </div>
 </div>
 
-<!-- <div class="hd">Ни одного товара не найдено</div> -->
 
 <app-social class="inf"></app-social>
