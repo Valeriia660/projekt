@@ -12,6 +12,8 @@ import { StarBasketService } from '../star-basket.service';
 export class ShowComponent implements OnInit {
 
   models: any[] = []
+  stars: any[];
+  baskets: any[];
   sub: Subscription;
   constructor(private router: Router, private actRouter: ActivatedRoute, private modelsService: ModelsService, private starBasketService: StarBasketService) {
     this.sub = this.actRouter.params.subscribe(p => {
@@ -22,6 +24,12 @@ export class ShowComponent implements OnInit {
         this.models = this.modelsService.microscopes;
       }
     })
+
+    this.stars = this.starBasketService.getList(this.starBasketService.keyStars);
+    console.log(this.stars);
+
+    this.baskets = this.starBasketService.getList(this.starBasketService.keyBaskets);
+    console.log(this.baskets);
    }
 
   ngOnInit(): void {
@@ -31,12 +39,14 @@ export class ShowComponent implements OnInit {
     //this.router.navigate(["/basket"]);
   //}
 
+  addToStars(model: any): void {
+    this.starBasketService.addToStars(model);
+  }
+
   addToBaskets(model: any): void {
     this.starBasketService.baskets.push(model);
     console.log("added to baskets");
   }
 
-  addToStars(model: any): void {
-    this.starBasketService.addToStars(model);
-  }
+
 }

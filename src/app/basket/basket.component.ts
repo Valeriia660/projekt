@@ -9,8 +9,12 @@ import { StarBasketService } from '../star-basket.service';
 export class BasketComponent implements OnInit {
 
   baskets: any[];
+  stars: any[];
   constructor(private starBasketService: StarBasketService) {
     this.baskets = this.starBasketService.baskets;
+
+    this.stars = this.starBasketService.getList(this.starBasketService.keyStars);
+    console.log(this.stars);
   }
 
   ngOnInit(): void {

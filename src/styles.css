@@ -29,7 +29,6 @@ body {
 }
 
 .c1:hover {
-    font-size: 20px;
     color: rgb(240, 238, 255);
     text-decoration: underline;
 }

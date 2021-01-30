@@ -9,10 +9,12 @@ import { StarBasketService } from '../star-basket.service';
 export class StarComponent implements OnInit {
 
   stars: any[];
+  baskets: any[];
   constructor(private starBasketService: StarBasketService) {
-    this.stars = this.starBasketService.getList(this.starBasketService.keyStars);
-    console.log(this.stars);
+    this.stars = this.starBasketService.stars;
     
+    this.baskets = this.starBasketService.getList(this.starBasketService.keyBaskets);
+    console.log(this.baskets);
   }
   
 

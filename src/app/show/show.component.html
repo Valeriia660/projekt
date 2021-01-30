@@ -16,13 +16,13 @@
                     <strong>{{model.price}} РУБ</strong>
                 </div>
                 <br>
-                <img routerLink="/basket" routerLinkActive="active" src="../assets/img/basket.jpg"
-                    title="добавить в корзину" height="40px" (click)="addToBaskets()">
+                <img src="../assets/img/basket.jpg" title="добавить в корзину" height="40px" 
+                (click)="addToBaskets(model)">
                 <img src="../assets/img/starr.jpg" title="добавить в избранные" height="40px"
-                    (click)="addToStars(model)">
+                (click)="addToStars(model)">
             </div>
         </div>
     </div>
 </div>
-
+<!--div>routerLink="/basket" routerLinkActive="active"</div-->
 <app-social class="inf"></app-social>
