@@ -1,5 +1,5 @@
 #bg {
-    height: 50vh;
+    height: 60vh;
     width: 60vw;
     background-color: rgb(240, 226, 255);
     position: absolute;
@@ -10,16 +10,5 @@
 .pay {
     font-size: 19px;
     color: rgb(65, 40, 134);
-    position: absolute;
-    left: 21vw;
-    top: 18vh;
-}
-
-.inf {
-    height: 40px;
-    width: 100%;
-    background-color: rgb(65, 40, 134);
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    padding: 20px;
 }

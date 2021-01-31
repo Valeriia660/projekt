@@ -56,10 +56,5 @@
 }
 
 .inf {
-    height: 40px;
-    width: 100%;
-    background-color: rgb(65, 40, 134);
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    width: 99vw;
 }
