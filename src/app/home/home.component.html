@@ -2,8 +2,10 @@
     <div *ngFor="let model of models">
         <div class="model">
             <div class="col1">
+                <img src="../assets/img/избр11.jpg" title="добавить в избранные" (click)="addToStars(model)"
+                    height="40px">
                 <div class="photo">
-                    <img [src]="model.link" height="200px"><br>
+                    <img [src]="model.link" height="240px"><br>
                 </div>
             </div>
             <div class="col2">
@@ -12,15 +14,13 @@
                     {{model.desc}}
                 </div>
                 <br>
-                <div id="price">
+                <div class="price">
                     <strong>{{model.price}} РУБ</strong>
+                    <img src="../assets/img/корзина21.jpg" id="pr" title="добавить в корзину" (click)="addToBaskets(model)"
+                    height="40px">
                 </div>
-                <br>
-
-                <img src="../assets/img/basket.jpg" title="добавить в корзину" (click)="addToBaskets(model)"
-                    height="40px">
-                <img src="../assets/img/starr.jpg" title="добавить в избранные" (click)="addToStars(model)"
-                    height="40px">
+                
+                
             </div>
         </div>
     </div>
