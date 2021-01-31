@@ -11,10 +11,11 @@ import { StarBasketService } from '../star-basket.service';
 export class HomeComponent implements OnInit {
 
 
-  models: any[] = [] 
+  models: any[] = []
   stars: any[];
   baskets: any[];
 
+<<<<<<< HEAD
     constructor(private router: Router, private modelsService: ModelsService, private starBasketService: StarBasketService) {
     this.models.push(...this.modelsService.telescopes)
     this.models.push(...this.modelsService.microscopes)
@@ -23,13 +24,23 @@ export class HomeComponent implements OnInit {
     this.models.push(...this.modelsService.shtatives)
     this.models.push(...this.modelsService.loupes)
     this.models.push(...this.modelsService.others)
+=======
+  constructor(private router: Router, private modelsService: ModelsService, private starBasketService: StarBasketService) {    
+    this.models.push(...this.modelsService.telescopes);
+    this.models.push(...this.modelsService.microscopes);
+    this.models.push(...this.modelsService.binoculares);
+    this.models.push(...this.modelsService.trumpets);
+    this.models.push(...this.modelsService.shtatives);
+    this.models.push(...this.modelsService.loupes);
+    this.models.push(...this.modelsService.others);
+>>>>>>> master
 
     this.stars = this.starBasketService.getList(this.starBasketService.keyStars);
     console.log(this.stars);
 
     this.baskets = this.starBasketService.getList(this.starBasketService.keyBaskets);
     console.log(this.baskets);
-   }
+  }
 
 
   ngOnInit(): void {
