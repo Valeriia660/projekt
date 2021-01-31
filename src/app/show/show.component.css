@@ -1,5 +1,5 @@
 .bg {
-    height: 100%;
+    max-height: 1000%;
     width: 60vw;
     background-color: rgb(240, 226, 255);
     position: absolute;
