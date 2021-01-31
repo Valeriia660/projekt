@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   baskets: any[];
 
     constructor(private router: Router, private modelsService: ModelsService, private starBasketService: StarBasketService) {
-    this.models = this.modelsService.telescopes
+    this.models.push(...this.modelsService.telescopes)
     this.models.push(...this.modelsService.microscopes)
     this.models.push(...this.modelsService.binoculares)
     this.models.push(...this.modelsService.trumpets)

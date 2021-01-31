@@ -7,33 +7,17 @@
     top: 16vh;
 }
 
-.call {
-    left: 10px;
+#gl {
     font-size: 19px;
+    padding-left: 30px;
+    color: rgb(65, 40, 134);
+}
+
+.o {
+    height: 88.6%;
+    width: 60vw;
     position: absolute;
-}
+    padding-bottom: 36px;
+    left: 0vw;
 
-.hide {
-    display: none; 
-}
-
-.hide + label ~ div{
-    display: none;
-}
-
-.hide + label {
-    padding: 0;
-    color: rgb(65, 40, 134);
-    display: inline-block; 
-}
-
-.hide:checked + label {
-    color: rgb(126, 104, 189);
-    border-bottom: 0;
-}
-
-.hide:checked + label + div {
-    display: block; 
-    padding: 5px; 
-    color: rgb(65, 40, 134);
 }
