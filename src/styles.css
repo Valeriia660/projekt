@@ -55,7 +55,7 @@ body {
     top: 10vh;
 }
 
-.case {
+#case {
     position: absolute;
     top: 0px;
     right: 4.2vw;
@@ -63,9 +63,14 @@ body {
 }
 
 .f1 {
+    position: absolute;
+    right: 100px;
     height: 57px;
     outline: none;
-    padding: 33px;
+}
+
+#ff {
+    padding-right: 140px;
 }
 
 
