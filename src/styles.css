@@ -112,11 +112,12 @@ body {
     text-decoration: underline;
 }
 
+
 .inf {
     height: 40px;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(65, 40, 134);
-    position: fixed;
-    bottom: 0%;
-    left: 0%;
+    position: absolute;
+    bottom: 0;
+    left: -20vw;
 }
