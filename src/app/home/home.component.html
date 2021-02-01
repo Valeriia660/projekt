@@ -2,6 +2,8 @@
     <div *ngFor="let model of models">
         <div class="model">
             <div class="col1">
+                <img src="../assets/img/избр11.jpg" title="добавить в избранные" (click)="addToStars(model)"
+                    height="40px">
                 <div class="photo">
                     <img [src]="model.link" height="240px"><br>
                 </div>
