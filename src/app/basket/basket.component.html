@@ -1,27 +1,27 @@
-
-
-<div id="bg">
+<div class="bg">
+    <div id="hp" *ngIf="baskets.length == 0">Ни одного товара не найдено</div>
     <div *ngFor="let model of baskets">
         <div class="model">
             <div class="col1">
                 <div class="photo">
-                    <img [src]="model.link" height="200px"><br>
+                    <img [src]="model.link" height="240px"><br>
                 </div>
             </div>
             <div class="col2">
+                <img src="../assets/img/избр12.jpg" class="jpgg" title="добавить в избранные"
+                    (click)="addToStars(model)" height="40px">
                 <a routerLink="/basket" id="name" routerLinkActive="active">{{model.name}}</a>
                 <div id="desc">
                     {{model.desc}}
                 </div>
                 <br>
-                <div id="price">
+                <div class="price">
                     <strong>{{model.price}} РУБ</strong>
+                    <img src="../assets/img/корзина.jpg" id="pr" title="удалить из корзины"
+                        (click)="removeFromBaskets(model)" height="45px">
                 </div>
-                <br>
-                <img src="../assets/img/basket.jpg" title="удалить из корины"
-                    height="40px" (click)="removeFromBaskets(model)">
-                <img src="../assets/img/starr.jpg" title="добавить в избранные"
-                    height="40px" (click)="addToStars(model)">
+
+
             </div>
         </div>
     </div>
@@ -29,5 +29,3 @@
 </div>
 
 <!--div class="hp">Товары не найдены</div-->
-
-<div class="hp">Товары не найдены</div>

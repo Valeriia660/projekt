@@ -1,56 +1,76 @@
-#bg {
-    max-height: 1000%;
+.bg {
+    max-height: 10000%;
+    min-height: 759.4px;
     width: 60vw;
     background-color: rgb(240, 226, 255);
     position: absolute;
+    padding-bottom: 50px;
     left: 20vw;
     top: 16vh;
 }
 
-.hd {
-    font-size: 19px;
+#hd {
+    font-size: 26px;
     color: rgb(65, 40, 134);
     position: absolute;
-    left: 44vw;
-    top: 18vh;
+    vertical-align: middle;
+    padding-left: 390px;
+    padding-top: 80px;
 }
 
 .model {
     display: grid;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
     margin-left: 10px;
     grid-template-columns: 200px auto;
     grid-template-rows: auto;
 }
 
+.jpgg {
+    opacity: 0.5;
+}
+
+.jpgg:hover {
+    opacity: 0.76;
+}
+
 #name {
-    font-size: 27px;
+    font-size: 28px;
     color: rgb(65, 40, 134);
     font-weight: bold;
+    padding-left: 15px;
     text-decoration: none;
 }
 
 #name:hover {
-    font-size: 29px;
-    color: rgb(65, 40, 134);
     text-decoration: underline;
 }
 
 #desc {
     font-size: 20px;
+    padding-top: 10px;
+    padding-left: 55px;
     color: rgb(81, 63, 129);
 }
 
-#price {
+.price {
     font-size: 28px;
+    padding-left: 65px;
+    padding-top: 70px;
     color: rgb(81, 63, 129);
+}
+
+#pr {
+    padding-left: 30px;
+}
+
+#pr:hover {
+    opacity: 0.76;
 }
 
 .inf {
-    height: 40px;
-    width: 100%;
-    background-color: rgb(65, 40, 134);
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    width: 99vw;
 }

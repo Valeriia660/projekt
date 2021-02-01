@@ -22,6 +22,16 @@ export class ShowComponent implements OnInit {
         this.models = this.modelsService.telescopes;
       } else if (number === 2) {
         this.models = this.modelsService.microscopes;
+      } else if (number === 3) {
+        this.models = this.modelsService.binoculares;
+      } else if (number === 4) {
+        this.models = this.modelsService.trumpets;
+      } else if (number === 5) {
+        this.models = this.modelsService.shtatives;
+      } else if (number === 6) {
+        this.models = this.modelsService.loupes;
+      } else if (number === 7) {
+        this.models = this.modelsService.others;
       }
     })
 
