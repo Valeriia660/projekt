@@ -16,6 +16,7 @@ import { SocialComponent } from './social/social.component';
 import { ProfilComponent } from './profil/profil.component';
 import { RegComponent } from './reg/reg.component';
 import { EntComponent } from './ent/ent.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { EntComponent } from './ent/ent.component';
     ProfilComponent,
     RegComponent,
     EntComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
