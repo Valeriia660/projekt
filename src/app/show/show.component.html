@@ -3,24 +3,22 @@
         <div class="model">
             <div class="col1">
                 <div class="photo">
-                    <img [src]="model.link" height="200px"><br>
+                    <img [src]="model.link" height="245px"><br>
                 </div>
             </div>
+            <img src="../assets/img/избр12.jpg" class="jpgg" title="добавить в избранные" (click)="addToStars(model)"
+                height="40px">
             <div class="col2">
-                <a routerLink="/basket" id="name" routerLinkActive="active">{{model.name}}</a>
+                <a routerLink="/not-found" id="name" routerLinkActive="active">{{model.name}}</a>
                 <div id="desc">
                     {{model.desc}}
                 </div>
                 <br>
-                <div id="price">
+                <div class="price">
                     <strong>{{model.price}} РУБ</strong>
+                    <img src="../assets/img/корзина21.jpg" id="pr" title="добавить в корзину" height="40px"
+                        (click)="addToBaskets(model)">
                 </div>
-                <br>
-
-                <img src="../assets/img/basket.jpg" title="добавить в корзину" height="40px"
-                    (click)="addToBaskets(model)">
-                <img src="../assets/img/starr.jpg" title="добавить в избранные" height="40px"
-                    (click)="addToStars(model)">
             </div>
         </div>
     </div>

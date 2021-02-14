@@ -4,12 +4,12 @@
         <div class="model">
             <div class="col1">
                 <div class="photo">
-                    <img [src]="model.link" height="240px"><br>
+                    <img [src]="model.link" height="245px"><br>
                 </div>
             </div>
-            <div class="col2">
-                <img src="../assets/img/избр12.jpg" class="jpgg" title="добавить в избранные"
+            <img src="../assets/img/избр12.jpg" class="jpgg" title="добавить в избранные"
                     (click)="addToStars(model)" height="40px">
+            <div class="col2">
                 <a routerLink="/basket" id="name" routerLinkActive="active">{{model.name}}</a>
                 <div id="desc">
                     {{model.desc}}
@@ -27,5 +27,3 @@
     </div>
     <app-social class="inf"></app-social>
 </div>
-
-<!--div class="hp">Товары не найдены</div-->

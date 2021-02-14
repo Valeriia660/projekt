@@ -2,15 +2,16 @@
     <div class=menu cellpadding="10">
         <nav>
             <img routerLink="" routerLinkActive="active" class="c0" src="../assets/img/logo.jpg" (click)="goToMain()">
-            
-            <a routerLink="" routerLinkActive="active" class="c1" routerLink=""
-                [routerLinkActiveOptions]="{exact:true}">Главная</a>
-            <a routerLink="/pay" routerLinkActive="active" class="c1">Доставка и оплата</a>
-            <a routerLink="/about" routerLinkActive="active" class="c1">О cайте</a>
-            <a routerLink="/ent" routerLinkActive="active" class="c1">Вход</a>
+            <a class="all">
+                <a routerLink="" routerLinkActive="active" class="c1" routerLink=""
+                    [routerLinkActiveOptions]="{exact:true}">Главная</a>
+                <a routerLink="/pay" routerLinkActive="active" class="c1">Доставка и оплата</a>
+                <a routerLink="/about" routerLinkActive="active" class="c1">О cайте</a>
+                <!--a routerLink="/ent" routerLinkActive="active" class="c1">Вход</a-->
+            </a>
         </nav>
     </div>
-    `
+
     <div class="tl">
         <table>
             <tr>
@@ -25,14 +26,14 @@
         </table>
     </div>
 
-    <div ></div>
+    <div></div>
 
     <div class="case" id="tb">
         <nav>
             <app-catalog class="tol"></app-catalog>
 
-            <img routerLink="/basket" routerLinkActive="active" class="f1" id="ff"  src="../assets/img/basket11.jpg" title="корзина"
-                (click)="goToBasket()">
+            <img routerLink="/basket" routerLinkActive="active" class="f1" id="ff" src="../assets/img/basket11.jpg"
+                title="корзина" (click)="goToBasket()">
 
             <img routerLink="/star" routerLinkActive="active" class="f1" src="../assets/img/starr.jpg" title="избранное"
                 (click)="goToStar()">

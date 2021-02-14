@@ -1,0 +1,56 @@
+.inf {
+    display: grid;
+    height: 190px;
+    max-width: 10000%;
+    background-color: rgb(65, 40, 134);
+    position: absolute;
+    bottom: 0;
+    left: -20vw;
+    grid-template-columns: 400px 1249px 270px;
+    grid-template-rows: auto;
+}
+
+#sc {
+    grid-column: 1;
+    padding-left: 10px;
+}
+
+#VK {
+    font-size: 22px;
+    padding-left: 10px;
+    color: rgb(240, 238, 255);
+}
+
+#Inst {
+    font-size: 22px;
+    padding-left: 10px;
+    color: rgb(240, 238, 255);
+}
+
+#Fb {
+    font-size: 22px;
+    padding-left: 10px;
+    color: rgb(240, 238, 255);
+}
+
+#logo {
+    grid-column: 2;
+    height: 80px;
+    width: 300px;
+    padding-top: 45px;
+    padding-left: 39vh;
+    outline: none;
+}
+
+.phone {
+    grid-column: 3;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+}
+
+#phone1 {
+    font-size: 19px;
+    color: rgb(205, 193, 226);
+}

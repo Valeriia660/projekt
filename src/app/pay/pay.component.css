@@ -1,24 +1,22 @@
-#bg {
-    max-height: 100%;
+.bg {
+    height: 45vh;
     width: 60vw;
     background-color: rgb(240, 226, 255);
     position: absolute;
-    padding-bottom: 40px;
     left: 20vw;
     top: 16vh;
 }
 
-.pay {
+#pay {
     font-size: 19px;
     color: rgb(65, 40, 134);
     padding: 30px;
 }
 
 .o {
-    height: 57%;
-    width: 59.8vw;
+    height: 98.8%;
+    width: 60vw;
     position: absolute;
     padding-bottom: 36px;
     left: 0vw;
-
 }

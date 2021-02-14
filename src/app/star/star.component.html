@@ -1,15 +1,15 @@
 <div class="bg">
-        <div id="hd" *ngIf="stars.length == 0">Ни одного товара не найдено</div>
+    <div id="hd" *ngIf="stars.length == 0">Ни одного товара не найдено</div>
     <div *ngFor="let model of stars">
         <div class="model">
             <div class="col1">
                 <div class="photo">
-                    <img [src]="model.link" height="240px"><br>
+                    <img [src]="model.link" height="245px"><br>
                 </div>
             </div>
+            <img src="../assets/img/НЕизбр.jpg" class="jpgg" title="удалить из избранных"
+                (click)="removeFromStars(model)" height="40px">
             <div class="col2">
-                <img src="../assets/img/НЕизбр.jpg" class="jpgg" title="удалить из избранных"
-                    (click)="removeFromStars(model)" height="40px">
                 <a routerLink="/basket" id="name" routerLinkActive="active">{{model.name}}</a>
                 <div id="desc">
                     {{model.desc}}
@@ -24,7 +24,6 @@
 
             </div>
         </div>
-        
     </div>
     <app-social class="inf"></app-social>
 </div>

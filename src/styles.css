@@ -1,6 +1,6 @@
 body {
-    background-image: url(assets/img/background.jpg);
-
+    background: rgb(202,166,240);
+background: radial-gradient(circle, rgba(202,166,240,1) 37%, rgba(132,107,194,1) 100%);
 }
 
 .menu {
@@ -15,8 +15,8 @@ body {
 .c0 {
     height: 65px;
     padding-top: 10px;
-    padding-right: 277px;
     padding-left: 13px;
+    padding-right: 307px;
     outline: none;
 }
 
@@ -73,7 +73,6 @@ body {
     padding-right: 140px;
 }
 
-
 .funk {
     position: absolute;
     right: 12vw;
@@ -108,14 +107,4 @@ body {
     font-size: 17px;
     color: rgb(255, 255, 255);
     text-decoration: underline;
-}
-
-
-.inf {
-    height: 40px;
-    width: 100vw;
-    background-color: rgb(65, 40, 134);
-    position: absolute;
-    bottom: 0;
-    left: -20vw;
 }
